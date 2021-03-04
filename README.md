@@ -1,11 +1,11 @@
-## Lily58Pro - KeyMap + OLED : Keylogger + Lily58 Logo
+## Lily58Pro - KeyMap + OLED : Key logger + Lily58 Logo
 
 ![lily58Pro image](./Pictures/Lily58proImg.jpeg)
 
 -----
 ### Key maps :
 
-![lily58Pro Key Map + Layers Layout](./Pictures/Lily58KeyMapLayouts.jpeg)
+![lily58Pro Key Map + Layers Layout](./Pictures/Lily58LayoutV2.jpeg)
 
 1. Dvorak - Default Layer when plugged in
 2. Special Keys - "Middle" Layer, activated only on key press + hold
@@ -29,7 +29,10 @@ There are so many reasons why I decided on building my own keyboard I can spend 
 
 - I wanted to combine my hobbies of woodworking, electronics, and programming. 
 
- ## Installation 
+Also was my first experience writing C, embedded programming, etc.  
+Wanted to see how fast I can pick up new technologies and make sense of existing code bases and make something functional with no compromise. 
+
+## Installation 
  
  1. Clone QMK Repo : 
  
@@ -68,7 +71,24 @@ This is also assuming you are using elite-c micro controller + bootloader if you
 Running qmk flash with no flags only works in this instance because you are currently in the directory you want to flash. 
 
 Once flashing is complete. The right half(assuming you are using two micro controlllers :  should not have been plugged in while flashing via usb-c cable) won't work. No worries all that needs to be done is a quick flip of the usb-c cable from left side to the right side and back for just a seconds and it'll register itself as master(left) - slave(right)  
- 
- 
 
- 
+### Future For The Project 
+****
+
++ OLED Covers
++ LED Back-lighting 
+	* Custom lighting patterns
++ Possibly other key mapping layout changes - Depending on real world functionality of current
++ Logo redesign, possible generator for customization user specific
+
+#### References + Useful Links 
+
+**Parts** - Just about everything you might need, wish I found this before I actually did this keyboard
+>https://keyhive.xyz/
+
+**Build Guide** For anyone new to electronics and want to do a ***Lily58***
+> https://github.com/kata0510/Lily58/blob/master/Pro/Doc/buildguide_en.md
+
+**QMK** A dependency for the project - Has all the necessary build data to get this up and running. 
+> https://github.com/qmk/qmk_firmware
+> Place this repo in qmk_firmware/keyboard.lily58/kepmaps/
